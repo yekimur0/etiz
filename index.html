@@ -21,60 +21,383 @@
 
   <body class="page__body">
     <header class="header">
-  <div class="header__top">
-    <div class="container">
-      <div class="header__top-wrapper">
-        <div class="header__top-left">
-          <div class="language">
-            <button aria-label="Русский язык" class="btn-reset rus active">
-              RU
+  <div class="header-desktop">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-wrapper">
+          <div class="header__top-left">
+            <div class="language">
+              <button aria-label="Русский язык" class="btn-reset rus active">
+                RU
+              </button>
+            </div>
+            <div class="header__city">
+              <select name="" id="">
+                <option value="">г.Москва</option>
+                <option value="">г.Москва</option>
+                <option value="">г.Москва</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="header__search">
+            <input type="text" class="input-search" placeholder="Поиск" />
+            <button class="btn-reset btn-search">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.1384 16.1574L12.9967 12.0156C14.1253 10.6352 14.6803 8.87384 14.5467 7.09577C14.4131 5.31769 13.6012 3.65899 12.2789 2.46274C10.9566 1.26649 9.22517 0.624231 7.44264 0.6688C5.66011 0.713368 3.9629 1.44136 2.70207 2.70219C1.44124 3.96302 0.713246 5.66023 0.668678 7.44276C0.624109 9.22529 1.26637 10.9568 2.46262 12.279C3.65886 13.6013 5.31757 14.4132 7.09564 14.5468C8.87372 14.6804 10.6351 14.1255 12.0155 12.9968L16.1573 17.1385C16.2881 17.2649 16.4634 17.3349 16.6453 17.3333C16.8273 17.3317 17.0013 17.2587 17.1299 17.1301C17.2586 17.0014 17.3316 16.8274 17.3331 16.6454C17.3347 16.4635 17.2648 16.2882 17.1384 16.1574ZM7.62746 13.1786C6.52957 13.1786 5.45635 12.853 4.54349 12.2431C3.63063 11.6331 2.91915 10.7662 2.49901 9.75185C2.07886 8.73754 1.96894 7.62142 2.18312 6.54463C2.39731 5.46785 2.92599 4.47875 3.70231 3.70243C4.47863 2.92611 5.46772 2.39743 6.54451 2.18325C7.6213 1.96906 8.73742 2.07899 9.75173 2.49913C10.766 2.91927 11.633 3.63076 12.2429 4.54361C12.8529 5.45647 13.1785 6.5297 13.1785 7.62758C13.1768 9.09929 12.5914 10.5102 11.5508 11.5509C10.5101 12.5916 9.09916 13.1769 7.62746 13.1786Z"
+                  fill="#383838"
+                />
+              </svg>
             </button>
           </div>
-          <div class="header__city">
-            <select name="" id="">
-              <option value="">г.Москва</option>
-              <option value="">г.Москва</option>
-              <option value="">г.Москва</option>
-            </select>
+
+          <div class="header__top-right">
+            <a class="header__phone" href="">8 800 500 02 80</a>
+            <div class="header__socials">
+              <a href="">
+                <img src="../img/icons/whatsapp.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="../img/icons/telegram.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="../img/icons/vk.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="../img/icons/dzen.svg" alt="" />
+              </a>
+            </div>
+            <a class="header__mail" href="">office@etiz.ru</a>
+            <button class="btn-reset header__top-btn btn--gray">
+              <svg
+                width="21"
+                height="20"
+                viewBox="0 0 21 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.8335 12.5L3.8335 18.5764"
+                  stroke="#383838"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M8 0.833374L8 18.3334"
+                  stroke="#383838"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M16.3335 5.83337L16.3335 17.9862"
+                  stroke="#383838"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M12.1665 9.16663L12.1665 18.3333"
+                  stroke="#383838"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Сравнение
+            </button>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="header__search">
-          <input type="text" class="input-search" placeholder="Поиск" />
-          <button class="btn-reset btn-search">
+    <div class="header__bottom">
+      <div class="center">
+        <div class="container">
+          <div class="center__wrapper">
+            <a class="logo" href="">
+              <img src="../img/logo.svg" width="180" height="36" alt="Etiz" />
+              <span>Композиты нового поколения</span>
+            </a>
+
+            <div class="center__links">
+              <a class="green" href="">Композитный Лист Compoglass </a>
+              <a class="blue" href="">Теплоизоляция Паростекло </a>
+              <a class="orange" href="">Композитная Арматура</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="container">
+          <div class="bottom__menu">
+            <nav class="nav">
+              <ul class="list-reset list">
+                <li class="hovered-item">
+                  <a class="active" href="">
+                    Продукция
+                    <svg
+                      width="10"
+                      height="8"
+                      viewBox="0 0 10 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.82199 6.81355C5.42431 7.38756 4.57569 7.38756 4.17801 6.81355L0.891226 2.06949C0.431746 1.40629 0.906402 0.5 1.71322 0.5L8.28678 0.5C9.0936 0.5 9.56825 1.40629 9.10877 2.06949L5.82199 6.81355Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+
+                  <div class="sublist__wrapper">
+                    <ul class="list-reset sublist">
+                      <li class="sublist__item">
+                        <a class="sublist__link" href="">Бухты</a>
+
+                        <div class="sublist-2">
+                          <div class="sublist-2-block">
+                            <div class="sublist-2-title">Бухты стандартные</div>
+                            <ul class="list-reset sublist-2-menu">
+                              <li>
+                                <a href="">Серия ETIZ</a>
+                              </li>
+                              <li>
+                                <a href="">Серия ETIZ СТАНДАРТ (цветная)</a>
+                              </li>
+                              <li>
+                                <a href="">Серия ETIZ СТРОНГ (черная)</a>
+                              </li>
+                              <li>
+                                <a href="">Серия ETIZ (цветная) </a>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="sublist-2-block">
+                            <div class="sublist-2-title">Бухты стандартные</div>
+                            <ul class="list-reset sublist-2-menu">
+                              <li>
+                                <a href="">Серия ETIZ</a>
+                              </li>
+                              <li>
+                                <a href="">Серия ETIZ СТАНДАРТ (цветная)</a>
+                              </li>
+                              <li>
+                                <a href="">Серия ETIZ СТРОНГ (черная)</a>
+                              </li>
+                              <li>
+                                <a href="">Серия ETIZ (цветная) </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sublist__item">
+                        <a class="sublist__link" href=""> Сетки </a>
+                        <div class="sublist-2">
+                          <div class="sublist-2-block">
+                            <div class="sublist-2-title">Бухты стандартные</div>
+                            <ul class="list-reset sublist-2-menu">
+                              <li>
+                                <a href="">Серия ETIZ</a>
+                              </li>
+                              <li>
+                                <a href="">Серия ETIZ СТАНДАРТ (цветная)</a>
+                              </li>
+                              <li>
+                                <a href="">Серия ETIZ СТРОНГ (черная)</a>
+                              </li>
+                              <li>
+                                <a href="">Серия ETIZ (цветная) </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sublist__item">
+                        <a class="sublist__link" href=""> Пруты </a>
+                      </li>
+                      <li class="sublist__item">
+                        <a class="sublist__link" href=""> Гибкие связи </a>
+                      </li>
+                      <li class="sublist__item">
+                        <a class="sublist__link" href="">
+                          Фиксаторы арматуры
+                        </a>
+                      </li>
+                      <li class="sublist__item">
+                        <a class="sublist__link" href="">
+                          Некондиционная продукция
+                        </a>
+                      </li>
+                      <li class="sublist__item">
+                        <a class="sublist__link" href="">
+                          Композитные листы COMPOGLASS
+                        </a>
+                      </li>
+                      <li class="sublist__item">
+                        <a class="sublist__link" href=""> Паростекло </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="hovered-item">
+                  <a href=""
+                    >Области применения
+                    <svg
+                      width="10"
+                      height="8"
+                      viewBox="0 0 10 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.82199 6.81355C5.42431 7.38756 4.57569 7.38756 4.17801 6.81355L0.891226 2.06949C0.431746 1.40629 0.906402 0.5 1.71322 0.5L8.28678 0.5C9.0936 0.5 9.56825 1.40629 9.10877 2.06949L5.82199 6.81355Z"
+                        fill="#383838"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="hovered-item">
+                  <a href=""
+                    >О компании
+                    <svg
+                      width="10"
+                      height="8"
+                      viewBox="0 0 10 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.82199 6.81355C5.42431 7.38756 4.57569 7.38756 4.17801 6.81355L0.891226 2.06949C0.431746 1.40629 0.906402 0.5 1.71322 0.5L8.28678 0.5C9.0936 0.5 9.56825 1.40629 9.10877 2.06949L5.82199 6.81355Z"
+                        fill="#383838"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">Документация</a>
+                </li>
+                <li>
+                  <a href="">Статьи</a>
+                </li>
+                <li>
+                  <a href="">Частые вопросы</a>
+                </li>
+                <li>
+                  <a href="">Контакты</a>
+                </li>
+                <li>
+                  <a href="">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+            <button
+              type="button"
+              class="btn-reset btn--accent"
+              data-open-modal="cb"
+            >
+              Заказать звонок
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-mobile">
+    <div class="container">
+      <div class="header-mobile__wrapper">
+        <a class="header-mobile__logo" href="">
+          <img src="../img/logo-mobile.svg" alt="Etiz" />
+        </a>
+        <div class="header-mobile__language">
+          <button class="btn-reset header-mobile__language-btn rus">RU</button>
+        </div>
+        <div class="header-mobile__search">
+          <button class="btn-reset" data-open-search>
             <svg
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
+              style="pointer-events: none"
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M17.1384 16.1574L12.9967 12.0156C14.1253 10.6352 14.6803 8.87384 14.5467 7.09577C14.4131 5.31769 13.6012 3.65899 12.2789 2.46274C10.9566 1.26649 9.22517 0.624231 7.44264 0.6688C5.66011 0.713368 3.9629 1.44136 2.70207 2.70219C1.44124 3.96302 0.713246 5.66023 0.668678 7.44276C0.624109 9.22529 1.26637 10.9568 2.46262 12.279C3.65886 13.6013 5.31757 14.4132 7.09564 14.5468C8.87372 14.6804 10.6351 14.1255 12.0155 12.9968L16.1573 17.1385C16.2881 17.2649 16.4634 17.3349 16.6453 17.3333C16.8273 17.3317 17.0013 17.2587 17.1299 17.1301C17.2586 17.0014 17.3316 16.8274 17.3331 16.6454C17.3347 16.4635 17.2648 16.2882 17.1384 16.1574ZM7.62746 13.1786C6.52957 13.1786 5.45635 12.853 4.54349 12.2431C3.63063 11.6331 2.91915 10.7662 2.49901 9.75185C2.07886 8.73754 1.96894 7.62142 2.18312 6.54463C2.39731 5.46785 2.92599 4.47875 3.70231 3.70243C4.47863 2.92611 5.46772 2.39743 6.54451 2.18325C7.6213 1.96906 8.73742 2.07899 9.75173 2.49913C10.766 2.91927 11.633 3.63076 12.2429 4.54361C12.8529 5.45647 13.1785 6.5297 13.1785 7.62758C13.1768 9.09929 12.5914 10.5102 11.5508 11.5509C10.5101 12.5916 9.09916 13.1769 7.62746 13.1786Z"
+                d="M16.4719 15.4908L12.3302 11.349C13.4588 9.96862 14.0138 8.20722 13.8802 6.42914C13.7466 4.65107 12.9347 2.99236 11.6124 1.79611C10.2901 0.599868 8.55866 -0.0423952 6.77613 0.00217363C4.99361 0.0467424 3.2964 0.774733 2.03556 2.03556C0.774733 3.2964 0.0467424 4.99361 0.00217363 6.77613C-0.0423952 8.55866 0.599868 10.2901 1.79611 11.6124C2.99236 12.9347 4.65107 13.7466 6.42914 13.8802C8.20722 14.0138 9.96862 13.4588 11.349 12.3302L15.4908 16.4719C15.6216 16.5983 15.7969 16.6682 15.9788 16.6666C16.1608 16.6651 16.3348 16.5921 16.4634 16.4634C16.5921 16.3348 16.6651 16.1608 16.6666 15.9788C16.6682 15.7969 16.5983 15.6216 16.4719 15.4908ZM6.96095 12.5119C5.86307 12.5119 4.78984 12.1864 3.87699 11.5764C2.96413 10.9665 2.25264 10.0995 1.8325 9.08523C1.41236 8.07092 1.30243 6.9548 1.51662 5.87801C1.73081 4.80122 2.25949 3.81213 3.03581 3.03581C3.81213 2.25949 4.80122 1.73081 5.87801 1.51662C6.9548 1.30243 8.07092 1.41236 9.08523 1.8325C10.0995 2.25264 10.9665 2.96413 11.5764 3.87699C12.1864 4.78984 12.5119 5.86307 12.5119 6.96095C12.5103 8.43266 11.9249 9.84362 10.8843 10.8843C9.84362 11.9249 8.43266 12.5103 6.96095 12.5119Z"
                 fill="#383838"
               />
             </svg>
           </button>
         </div>
+        <a class="header-mobile__phone" href="">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.5265 13.8066C11.6986 13.8857 11.8925 13.9037 12.0762 13.8578C12.26 13.8119 12.4226 13.7048 12.5373 13.5541L12.8332 13.1666C12.9884 12.9596 13.1897 12.7916 13.4211 12.6759C13.6526 12.5602 13.9078 12.5 14.1665 12.5H16.6665C17.1085 12.5 17.5325 12.6756 17.845 12.9881C18.1576 13.3007 18.3332 13.7246 18.3332 14.1666V16.6666C18.3332 17.1087 18.1576 17.5326 17.845 17.8451C17.5325 18.1577 17.1085 18.3333 16.6665 18.3333C12.6883 18.3333 8.87295 16.7529 6.0599 13.9399C3.24686 11.1268 1.6665 7.31154 1.6665 3.33329C1.6665 2.89127 1.8421 2.46734 2.15466 2.15478C2.46722 1.84222 2.89114 1.66663 3.33317 1.66663H5.83317C6.2752 1.66663 6.69912 1.84222 7.01168 2.15478C7.32424 2.46734 7.49984 2.89127 7.49984 3.33329V5.83329C7.49984 6.09203 7.4396 6.34722 7.32388 6.57865C7.20817 6.81007 7.04016 7.01138 6.83317 7.16663L6.44317 7.45913C6.29018 7.57594 6.18235 7.74211 6.138 7.92942C6.09364 8.11672 6.11549 8.31361 6.19984 8.48663C7.33874 10.7998 9.21186 12.6706 11.5265 13.8066Z"
+              stroke="#233589"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
 
-        <div class="header__top-right">
-          <a class="header__phone" href="">8 800 500 02 80</a>
-          <div class="header__socials">
-            <a href="">
-              <img src="../img/icons/whatsapp.svg" alt="" />
-            </a>
-            <a href="">
-              <img src="../img/icons/telegram.svg" alt="" />
-            </a>
-            <a href="">
-              <img src="../img/icons/vk.svg" alt="" />
-            </a>
-            <a href="">
-              <img src="../img/icons/dzen.svg" alt="" />
-            </a>
+        <div class="burger" id="burger">
+          <div class="burger-wrapper">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <a class="header__mail" href="">office@etiz.ru</a>
-          <button class="btn-reset header__top-btn btn--gray">
+        </div>
+      </div>
+
+      <div class="header-mobile__menu">
+        <div class="city-select">
+          <select id="city-select-mobile" class="city-select-custom">
+            <option value="">г.Москва</option>
+            <option value="">г.Владивосток</option>
+            <option value="">г.Магадан</option>
+          </select>
+        </div>
+        <nav class="mobile-menu">
+          <ul class="list-reset list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-item-accent" href="">Продукция</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="">Области применения</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="">О компании</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="">Документация</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="">Статьи</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="">Частые вопросы</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="">Контакты</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-mobile__footer">
+          <a class="compare" href="">
             <svg
               width="21"
               height="20"
@@ -86,159 +409,51 @@
                 d="M3.8335 12.5L3.8335 18.5764"
                 stroke="#383838"
                 stroke-linecap="round"
-              />
+              ></path>
               <path
                 d="M8 0.833374L8 18.3334"
                 stroke="#383838"
                 stroke-linecap="round"
-              />
+              ></path>
               <path
                 d="M16.3335 5.83337L16.3335 17.9862"
                 stroke="#383838"
                 stroke-linecap="round"
-              />
+              ></path>
               <path
                 d="M12.1665 9.16663L12.1665 18.3333"
                 stroke="#383838"
                 stroke-linecap="round"
-              />
+              ></path>
             </svg>
+            <span>3</span>
             Сравнение
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="header__bottom">
-    <div class="center">
-      <div class="container">
-        <div class="center__wrapper">
-          <a class="logo" href="">
-            <img src="../img/logo.svg" width="180" height="36" alt="Etiz" />
-            <span>Композиты нового поколения</span>
           </a>
 
-          <div class="center__links">
-            <a class="green" href="">Композитный Лист Compoglass </a>
-            <a class="blue" href="">Теплоизоляция Паростекло </a>
-            <a class="orange" href="">Композитная Арматура</a>
+          <div class="header-mobile__footer-contacts">
+            <a class="email" href="">office@etiz.ru</a>
+
+            <div class="socials">
+              <a class="phone" href="">8 800 500 02 80</a>
+
+              <div class="socials-wrapper">
+                <a href="">
+                  <img src="../img/icons/whatsapp.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="../img/icons/telegram.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="../img/icons/vk.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="../img/icons/dzen.svg" alt="" />
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="bottom">
-      <div class="container">
-        <div class="bottom__menu">
-          <nav class="nav">
-            <ul class="list-reset list">
-              <li class="hovered-item">
-                <a class="active" href="">
-                  Продукция
-                  <svg
-                    width="10"
-                    height="8"
-                    viewBox="0 0 10 8"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5.82199 6.81355C5.42431 7.38756 4.57569 7.38756 4.17801 6.81355L0.891226 2.06949C0.431746 1.40629 0.906402 0.5 1.71322 0.5L8.28678 0.5C9.0936 0.5 9.56825 1.40629 9.10877 2.06949L5.82199 6.81355Z"
-                      fill="white"
-                    />
-                  </svg>
-                </a>
-
-                <div class="sublist__wrapper">
-                  <ul class="list-reset sublist">
-                    <li class="sublist__item">
-                      <a class="sublist__link" href="">Бухты</a>
-                    </li>
-                    <li class="sublist__item">
-                      <a class="sublist__link" href=""> Сетки </a>
-                    </li>
-                    <li class="sublist__item">
-                      <a class="sublist__link" href=""> Пруты </a>
-                    </li>
-                    <li class="sublist__item">
-                      <a class="sublist__link" href=""> Гибкие связи </a>
-                    </li>
-                    <li class="sublist__item">
-                      <a class="sublist__link" href=""> Фиксаторы арматуры </a>
-                    </li>
-                    <li class="sublist__item">
-                      <a class="sublist__link" href="">
-                        Некондиционная продукция
-                      </a>
-                    </li>
-                    <li class="sublist__item">
-                      <a class="sublist__link" href="">
-                        Композитные листы COMPOGLASS
-                      </a>
-                    </li>
-                    <li class="sublist__item">
-                      <a class="sublist__link" href=""> Паростекло </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="hovered-item">
-                <a href=""
-                  >Области применения
-                  <svg
-                    width="10"
-                    height="8"
-                    viewBox="0 0 10 8"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5.82199 6.81355C5.42431 7.38756 4.57569 7.38756 4.17801 6.81355L0.891226 2.06949C0.431746 1.40629 0.906402 0.5 1.71322 0.5L8.28678 0.5C9.0936 0.5 9.56825 1.40629 9.10877 2.06949L5.82199 6.81355Z"
-                      fill="#383838"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="hovered-item">
-                <a href=""
-                  >О компании
-                  <svg
-                    width="10"
-                    height="8"
-                    viewBox="0 0 10 8"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5.82199 6.81355C5.42431 7.38756 4.57569 7.38756 4.17801 6.81355L0.891226 2.06949C0.431746 1.40629 0.906402 0.5 1.71322 0.5L8.28678 0.5C9.0936 0.5 9.56825 1.40629 9.10877 2.06949L5.82199 6.81355Z"
-                      fill="#383838"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="">Документация</a>
-              </li>
-              <li>
-                <a href="">Статьи</a>
-              </li>
-              <li>
-                <a href="">Частые вопросы</a>
-              </li>
-              <li>
-                <a href="">Контакты</a>
-              </li>
-              <li>
-                <a href="">Отзывы</a>
-              </li>
-            </ul>
-          </nav>
-          <button
-            type="button"
-            class="btn-reset btn--accent"
-            data-open-modal="cb"
-          >
+          <button class="btn-reset btn--accent" data-open-modal="cb">
             Заказать звонок
           </button>
         </div>
@@ -254,68 +469,86 @@
       <div class="swiper hero__swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide hero__slide">
-            <div class="hero__bg" aria-hidden="true">
+            <picture class="hero__bg" aria-hidden="true">
+              <source
+                srcset="../img/hero-bg-mobile.webp"
+                media="(max-width: 767px)"
+              />
               <img src="../img/hero-bg.webp" alt="" />
-            </div>
+            </picture>
             <div class="content">
-              <h1 class="hero__title">COMPOGLASS</h1>
-              <p class="hero__desc">
-                Композитные стеклопластиковые листы идеально для кровли
-              </p>
-              <ul class="list-reset list">
-                <li>Прочный и светопрозрачный</li>
-                <li>Легкий</li>
-                <li>Малое тепловое расширение</li>
-                <li>Устойчив к ультрафиолету и химически устойчив</li>
-              </ul>
+              <div class="content-wrapper">
+                <h1 class="hero__title">COMPOGLASS</h1>
+                <p class="hero__desc">
+                  Композитные стеклопластиковые листы идеально для кровли
+                </p>
+                <ul class="list-reset list">
+                  <li>Прочный и светопрозрачный</li>
+                  <li>Легкий</li>
+                  <li>Малое тепловое расширение</li>
+                  <li>Устойчив к ультрафиолету и химически устойчив</li>
+                </ul>
 
-              <a href="#" class="btn-reset btn--accent hero__btn"
-                >Узнать подробнее</a
-              >
+                <a href="#" class="btn-reset btn--accent hero__btn"
+                  >Узнать подробнее</a
+                >
+              </div>
             </div>
           </div>
 
           <div class="swiper-slide hero__slide">
-            <div class="hero__bg" aria-hidden="true">
+            <picture class="hero__bg" aria-hidden="true">
+              <source
+                srcset="../img/hero-bg-mobile.webp"
+                media="(max-width: 767px)"
+              />
               <img src="../img/hero-bg.webp" alt="" />
-            </div>
+            </picture>
             <div class="content">
-              <h1 class="hero__title">COMPOGLASS</h1>
-              <p class="hero__desc">
-                Композитные стеклопластиковые листы идеально для кровли
-              </p>
-              <ul class="list-reset list">
-                <li>Прочный и светопрозрачный</li>
-                <li>Легкий</li>
-                <li>Малое тепловое расширение</li>
-                <li>Устойчив к ультрафиолету и химически устойчив</li>
-              </ul>
+              <div class="content-wrapper">
+                <h1 class="hero__title">COMPOGLASS</h1>
+                <p class="hero__desc">
+                  Композитные стеклопластиковые листы идеально для кровли
+                </p>
+                <ul class="list-reset list">
+                  <li>Прочный и светопрозрачный</li>
+                  <li>Легкий</li>
+                  <li>Малое тепловое расширение</li>
+                  <li>Устойчив к ультрафиолету и химически устойчив</li>
+                </ul>
 
-              <a href="#" class="btn-reset btn--accent hero__btn"
-                >Узнать подробнее</a
-              >
+                <a href="#" class="btn-reset btn--accent hero__btn"
+                  >Узнать подробнее</a
+                >
+              </div>
             </div>
           </div>
 
           <div class="swiper-slide hero__slide">
-            <div class="hero__bg" aria-hidden="true">
+            <picture class="hero__bg" aria-hidden="true">
+              <source
+                srcset="../img/hero-bg-mobile.webp"
+                media="(max-width: 767px)"
+              />
               <img src="../img/hero-bg.webp" alt="" />
-            </div>
+            </picture>
             <div class="content">
-              <h1 class="hero__title">COMPOGLASS</h1>
-              <p class="hero__desc">
-                Композитные стеклопластиковые листы идеально для кровли
-              </p>
-              <ul class="list-reset list">
-                <li>Прочный и светопрозрачный</li>
-                <li>Легкий</li>
-                <li>Малое тепловое расширение</li>
-                <li>Устойчив к ультрафиолету и химически устойчив</li>
-              </ul>
+              <div class="content-wrapper">
+                <h1 class="hero__title">COMPOGLASS</h1>
+                <p class="hero__desc">
+                  Композитные стеклопластиковые листы идеально для кровли
+                </p>
+                <ul class="list-reset list">
+                  <li>Прочный и светопрозрачный</li>
+                  <li>Легкий</li>
+                  <li>Малое тепловое расширение</li>
+                  <li>Устойчив к ультрафиолету и химически устойчив</li>
+                </ul>
 
-              <a href="#" class="btn-reset btn--accent hero__btn"
-                >Узнать подробнее</a
-              >
+                <a href="#" class="btn-reset btn--accent hero__btn"
+                  >Узнать подробнее</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -379,13 +612,84 @@
         </div>
       </div>
     </div>
+
+    <div class="production-mobile">
+      <div class="production-mobile__cart">
+        <div class="image">
+          <img src="../img/product-mobile.webp" alt="" />
+          <div class="image-title">Композитный Лист Compoglass</div>
+        </div>
+        <div class="content">
+          <span>Производство — г. Ярославль</span>
+          <p>
+            Compoglass — прочный и лёгкий композитный лист нового поколения,
+            устойчивый к погодным и химическим воздействиям, с гарантией до 25
+            лет
+          </p>
+
+          <a class="btn" href="">
+            Подробнее про продукт
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.5 7.16667H13.8333M13.8333 7.16667L7.16667 0.5M13.8333 7.16667L7.16667 13.8333"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="production-mobile__cart">
+        <div class="image">
+          <img src="../img/product-mobile.webp" alt="" />
+          <div class="image-title">Композитный Лист Compoglass</div>
+        </div>
+        <div class="content">
+          <span>Производство — г. Ярославль</span>
+          <p>
+            Compoglass — прочный и лёгкий композитный лист нового поколения,
+            устойчивый к погодным и химическим воздействиям, с гарантией до 25
+            лет
+          </p>
+
+          <a class="btn" href="">
+            Подробнее про продукт
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.5 7.16667H13.8333M13.8333 7.16667L7.16667 0.5M13.8333 7.16667L7.16667 13.8333"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
       <section class="projects">
-  <div class="projects__bg">
+  <picture class="projects__bg">
+    <source
+      srcset="../img/projects-bg-mobile.webp"
+      media="(max-width: 767px)"
+    />
     <img src="../img/projects-bg.webp" alt="" />
-  </div>
+  </picture>
   <div class="container">
     <div class="projects__content">
       <h2 class="title__section projects__title">
@@ -825,6 +1129,65 @@
     </div>
   </div>
 </footer>
+ <div class="modal" id="cb">
+  <div class="modal__container">
+    <div class="modal__close">
+      <svg
+        style="pointer-events: none"
+        width="21"
+        height="21"
+        viewBox="0 0 21 21"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M20.5 0.5L0.5 20.5M0.5 0.5L20.5 20.5"
+          stroke="#383838"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+
+    <div class="modal__content">
+      <div class="modal__left">
+        <div class="title__section modal__title">
+          Закажите материал на ваш объект
+        </div>
+        <div class="modal__desc">
+          Оставьте ваши контактные данные, и мы свяжемся с вами в ближайшее
+          время
+        </div>
+        <form class="modal-form" action="">
+          <div class="input-form">
+            <input type="text" placeholder="Имя*" />
+          </div>
+          <div class="input-form">
+            <input type="text" placeholder="Телефон*" />
+          </div>
+          <div class="input-form">
+            <textarea placeholder="Комментарий"></textarea>
+          </div>
+
+          <div class="modal-form-bottom">
+            <div class="policy">
+              <input type="checkbox" />
+              <label for=""
+                >Я согласен на обработку <a href="">персональных данных</a> в
+                соответствии с политикой конфиденциальности</label
+              >
+            </div>
+
+            <button class="btn-reset btn--accent">Отправить запрос</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal__image">
+        <img src="../img/modal-person.webp" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
 
     <div class="overlay"></div>
   </body>

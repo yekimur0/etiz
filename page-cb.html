@@ -462,7 +462,7 @@
   </div>
 </header>
 
-    <main class="main career-main">
+    <main class="main cb-main">
       <div class="breadcrumbs">
   <div class="container">
     <ul class="list-reset">
@@ -479,122 +479,89 @@
   </div>
 </div>
 
-      <section class="career">
+      <section class="cb">
         <div class="container">
-          <div class="banner-section">
-            <div class="banner-section__bg">
-              <img src="./img/faq-banner-img.webp" alt="" />
-            </div>
-            <h1 class="title__section banner-section__title">
-              твоя Карьера в etiz
-            </h1>
-
-            <div class="banner-section__select">
-              <select>
-                <option value="">Выберете город</option>
-                <option value="">Москва</option>
-                <option value="">Владивосток</option>
-                <option value="">Уфа</option>
-              </select>
+          <div class="cb__wrapper">
+            <div class="cb__content">
+              <div class="banner-section">
+                <div class="banner-section__bg">
+                  <img src="./img/faq-banner-img.webp" alt="" />
+                </div>
+                <h1 class="title__section banner-section__title">
+                  Оставьте свою обратную связь
+                </h1>
+                <p>
+                  Воспользуйтесь данной формой, чтобы отправить нам обратную
+                  связь.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="career-content">
+      <div class="cb-form">
         <div class="container">
-          <div class="career-content__items">
-            <div class="career-content__item">
-              <div
-                class="head"
-                data-career-toggler="true"
-                aria-label="Показать инфо"
-              >
-                <div class="left">
-                  <div class="subtitle">
-                    Ведущий менеджер по работе с корпоративными клиентами
+          <div class="cb-form__wrapper">
+            <form class="form-cb">
+              <div class="form-cb__row">
+                <p>Тип обращения</p>
+                <div class="form-cb__fields">
+                  <div class="form-cb__field">
+                    <input type="radio" name="cb-form-radio" />
+                    <label for="">Предложить</label>
                   </div>
-                  <div class="exp">Москва Опыт 3-5 лет</div>
-                </div>
-
-                <div class="toggler">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 8H15M8 1V15"
-                      stroke="#233589"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <div class="form-cb__field">
+                    <input type="radio" name="cb-form-radio" />
+                    <label for="">Поблагодарить</label>
+                  </div>
+                  <div class="form-cb__field">
+                    <input type="radio" name="cb-form-radio" />
+                    <label for="">Пожаловаться</label>
+                  </div>
                 </div>
               </div>
-              <div class="bottom">
-                <div class="content">
-                  <div class="content-left">
-                    <strong>Чем предстоит заниматься:</strong>
-                    <ul class="list-reset list">
-                      <li>
-                        Развитие клиентов: работа с действующей базой и
-                        привлечение новых клиентов;
-                      </li>
-                      <li>
-                        Развитие клиентов: работа с действующей базой и
-                        привлечение новых клиентов;
-                      </li>
-                      <li>
-                        Развитие клиентов: работа с действующей базой и
-                        привлечение новых клиентов;
-                      </li>
-                      <li>
-                        Развитие клиентов: работа с действующей базой и
-                        привлечение новых клиентов;
-                      </li>
-                    </ul>
 
-                    <strong>Что мы ожидаем:</strong>
-                    <ul class="list-reset list">
-                      <li>
-                        Развитие клиентов: работа с действующей базой и
-                        привлечение новых клиентов;
-                      </li>
-                      <li>
-                        Развитие клиентов: работа с действующей базой и
-                        привлечение новых клиентов;
-                      </li>
-                      <li>
-                        Развитие клиентов: работа с действующей базой и
-                        привлечение новых клиентов;
-                      </li>
-                      <li>
-                        Развитие клиентов: работа с действующей базой и
-                        привлечение новых клиентов;
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="content-right">
-                    <div class="income">Уровень дохода по вакансии</div>
-                    <div class="income-price">от 100 000 руб.</div>
+              <div class="form-cb__row">
+                <div class="form-cb__fields input-form">
+                  <input type="text" placeholder="Имя" />
+                  <input type="text" placeholder="Телефон" />
+                </div>
+                <div class="form-cb__fields input-form">
+                  <input type="text" placeholder="E-mail" />
+                  <input type="text" placeholder="Ваш город" />
+                </div>
+                <div class="form-cb__fields input-form">
+                  <textarea placeholder="Текст обращения"></textarea>
+                </div>
+              </div>
 
-                    <button
-                      class="btn-reset btn--accent"
-                      data-open-modal="career"
+              <div class="form-cb__bottom">
+                <div class="policy">
+                  <div class="policy-block">
+                    <input type="checkbox" class="checkbox" />
+                    <label for=""
+                      >Я согласен на обработку персональных данных
+                      в соответствии с политикой
+                      конфиденциальности</label
                     >
-                      Откликнуться
-                    </button>
-                    <a href="#" class="btn--gray">Вакансия на hh.ru</a>
+                  </div>
+                  <div class="policy-block">
+                    <input type="checkbox" class="checkbox" />
+                    <label for=""
+                      >Согласен на получение рекламной информации</label
+                    >
                   </div>
                 </div>
+
+                <button type="button" class="btn-reset btn--accent">
+                  Отправить обращение
+                </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
-      </section>
+      </div>
 
       <section class="company">
   <div class="container">
