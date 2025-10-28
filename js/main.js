@@ -13930,6 +13930,26 @@ const closeModal = () => {
   const modal = document.querySelector('.modal._active');
   if (modal) modal.classList.remove('_active');
 };
+if (document.querySelector('.catalog-hit-swiper')) {
+  const h_swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.catalog-hit-swiper', {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    breakpoints: {
+      320: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      1200: {
+        slidesPerView: 3
+      },
+      1560: {
+        slidesPerView: 4
+      }
+    }
+  });
+}
 
 /***/ }),
 
