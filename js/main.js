@@ -13873,10 +13873,35 @@ const hoveredItem = document?.querySelectorAll('.hovered-item');
 const overlay = document?.querySelector('.overlay');
 const selectCityMobile = document?.getElementById('city-select-mobile');
 const hero_swiper = document.querySelector('.hero__swiper');
+const article_slider = document.querySelector('.article-catalog-swiper');
 if (hero_swiper) {
   const h_swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](hero_swiper, {
     slidesPerView: 1,
     spaceBetween: 10
+  });
+}
+if (article_slider) {
+  const a_swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](article_slider, {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    navigation: {
+      prevEl: '.article__slide-nav-btn.prev',
+      nextEl: '.article__slide-nav-btn.next'
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      },
+      1200: {
+        slidesPerView: 4
+      }
+    }
   });
 }
 document.body.addEventListener('click', e => {
