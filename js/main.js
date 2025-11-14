@@ -13916,6 +13916,7 @@ document.body.addEventListener('click', e => {
   if (target.id === 'burger') openMenu(target);
   if (target.dataset.openModal) showModal(target);
   if (target.classList.contains('modal') || target.classList.contains('modal__close')) closeModal(target);
+  if (target.dataset.productBtn) changeTabProduct(target);
 });
 hoveredItem.forEach(item => {
   item.addEventListener('mouseenter', e => {
@@ -13973,6 +13974,57 @@ if (document.querySelector('.catalog-hit-swiper')) {
         slidesPerView: 4
       }
     }
+  });
+}
+const changeTabProduct = target => {
+  let id = target.dataset.productBtn;
+  let el = document.querySelector(`[data-product-tab="${id}"]`);
+  const activeEl = document.querySelector('.product-info__tab.active');
+  const activeBtn = document.querySelector('.product-info__nav-btn.active');
+  if (activeEl) activeEl.classList.remove('active');
+  el.classList.add('active');
+  activeBtn.classList.remove('active');
+  target.classList.add('active');
+};
+const thumbsSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.photo-thumbs-slider', {
+  direction: 'vertical',
+  spaceBetween: 5,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  navigation: {
+    prevEl: '.photo-slider-2-nav-btn.prev',
+    nextEl: '.photo-slider-2-nav-btn.next'
+  }
+});
+const mainSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.photo-swiper-slider', {
+  spaceBetween: 10
+});
+thumbsSwiper.on('click', function (swiper, event) {
+  const clickedIndex = swiper.clickedIndex;
+  mainSwiper.slideTo(clickedIndex);
+});
+const linksFutures = document?.querySelectorAll('.catalog-future a');
+if (linksFutures) {
+  linksFutures.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const parent = link.closest('.catalog-future');
+      const desc = parent.querySelector('.desc');
+      const icon = parent.querySelector('.icon');
+      const title = parent.querySelector('.subtitle');
+      const modal = document.getElementById('future-info');
+
+      // modal els;
+
+      const modalTitle = modal.querySelector('.title');
+      const modalIcon = modal.querySelector('.icon');
+      const modalDesc = modal.querySelector('p');
+      modalTitle.textContent = title.textContent;
+      modalDesc.textContent = desc.textContent;
+      modalIcon.innerHTML = icon.innerHTML;
+      modal.classList.add('_active');
+    });
   });
 }
 
