@@ -14027,6 +14027,22 @@ if (linksFutures) {
     });
   });
 }
+document.querySelectorAll('.btn-reset.info').forEach(button => {
+  button.addEventListener('click', function (e) {
+    e.preventDefault();
+    const container = this.closest('.tooltip-container');
+    container.classList.toggle('active');
+  });
+});
+
+// Закрытие tooltip при клике вне области
+document.addEventListener('click', function (e) {
+  if (!e.target.closest('.tooltip-container')) {
+    document.querySelectorAll('.tooltip-container').forEach(container => {
+      container.classList.remove('active');
+    });
+  }
+});
 
 /***/ }),
 
