@@ -7754,11 +7754,20 @@ textarea:focus {
 .calculator__navigation-btn.roof:before {
   background: url("../../img/icons/krovlya.svg") center/cover no-repeat;
 }
+.calculator__navigation-btn.roof.active:before {
+  background: url("../../img/icons/krovlya-white.svg") center/cover no-repeat;
+}
 .calculator__navigation-btn.fence:before {
   background: url("../../img/icons/zabor.svg") center/cover no-repeat;
 }
+.calculator__navigation-btn.fence.active:before {
+  background: url("../../img/icons/zabor-white.svg") center/cover no-repeat;
+}
 .calculator__navigation-btn.facade:before {
   background: url("../../img/icons/fasad.svg") center/cover no-repeat;
+}
+.calculator__navigation-btn.facade.active:before {
+  background: url("../../img/icons/fasad-white.svg") center/cover no-repeat;
 }
 .calculator__navigation-btn.active {
   background: var(--siniy);
