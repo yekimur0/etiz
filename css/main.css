@@ -8547,6 +8547,173 @@ textarea:focus {
   visibility: visible;
 }
 
+.calculator-setka .banner-section {
+  margin-bottom: 30px;
+}
+.calculator-setka .right .calculator-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 0;
+}
+.calculator-setka .right .recommend .total {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--chernyy);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  margin-top: 22px;
+  gap: 8px;
+}
+.calculator-setka .right .recommend .total span {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--chernyy);
+}
+.calculator-setka .right .recommend .actions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 142px;
+  grid-template-columns: 1fr 142px;
+  gap: 10px;
+  margin-top: 14px;
+}
+@media (max-width: 767px) {
+  .calculator-setka .right .recommend .actions {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+.calculator-setka .right .recommend .actions .btn--accent {
+  padding: 19px;
+  font-size: 14px;
+}
+.calculator-setka .right .recommend .actions .download-btn {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: var(--chernyy);
+  border-radius: 8px;
+  padding: 8px 20px;
+  background: var(--hover-golubogo);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.calculator-setka .right .recommend .actions .download-btn .icon {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+}
+@media (any-hover: hover) {
+  .calculator-setka .right .recommend .actions .download-btn:hover {
+    color: var(--belyy);
+    background: var(--siniy);
+  }
+}
+.calculator-setka .roof-sizes p {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.calculator-setka .radio-block .radio-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.calculator-setka .radio-block .radio-items .radio-item {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+@media (max-width: 992px) {
+  .calculator-setka .calculator__tab .right {
+    display: block;
+  }
+}
+.calculator-setka .select-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+}
+.calculator-setka .select-options .select-option {
+  width: 100%;
+  position: relative;
+}
+.calculator-setka .select-options .select-option:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 20px;
+  width: 9px;
+  height: 9px;
+  background: url("../../img/icons/arrow-city-fill.svg") no-repeat;
+  background-size: contain;
+}
+.calculator-setka .select-options .select-option select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 8px;
+  padding: 14px 24px;
+  background: #fff;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--chernyy);
+  width: 100%;
+  border: none;
+}
+
 .before-footer {
   background: linear-gradient(132deg, #c1d2f6 0%, #e3e8f3 100%);
   padding-top: 80px;
